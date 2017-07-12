@@ -39,19 +39,19 @@ class LuhnTest extends \Codeception\Test\Unit
         $this->assertTrue($this->check(''));
     }
 
-//    public function testValidator()
-//    {
-//        $model = \yii\base\DynamicModel::validateData(['digits' => 116], [
-//            ['digits', LuhnValidator::className()]
-//        ]);
-//
-//        $this->assertArrayHasKey('digits', $model->getErrors());
-//        $this->assertEquals($model->getErrors('digits'), ['Digits not valid Luhn number.']);
-//
-//        $model = \yii\base\DynamicModel::validateData(['digits' => 117], [
-//            ['digits', LuhnValidator::className()]
-//        ]);
-//
-//        $this->assertArrayNotHasKey('digits', $model->getErrors());
-//    }
+    public function testValidator()
+    {
+        $model = \yii\base\DynamicModel::validateData(['digits' => 116], [
+            ['digits', LuhnValidator::className()]
+        ]);
+
+        $this->assertArrayHasKey('digits', $model->getErrors());
+        $this->assertEquals($model->getErrors('digits'), ['Digits not valid Luhn number.']);
+
+        $model = \yii\base\DynamicModel::validateData(['digits' => 117], [
+            ['digits', LuhnValidator::className()]
+        ]);
+
+        $this->assertArrayNotHasKey('digits', $model->getErrors());
+    }
 }
