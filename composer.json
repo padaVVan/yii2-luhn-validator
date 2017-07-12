@@ -1,0 +1,23 @@
+{
+    "name": "padavvan/yii2-luhn-validator",
+    "description": "Luhn validate",
+    "keywords": ["luhn", "yii2", "validator"],
+    "homepage": "###",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oleg Koltsov",
+            "email": "lil-oleg@ya.ru",
+            "role": "Creator"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "padavvan\\validators\\": "src"
+        }
+    },
+}
