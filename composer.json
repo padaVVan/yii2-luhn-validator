@@ -2,7 +2,7 @@
     "name": "padavvan/yii2-luhn-validator",
     "description": "Luhn validate",
     "keywords": ["luhn", "yii2", "validator"],
-    "homepage": "###",
+    "homepage": "https://github.com/padaVVan/yii2-luhn-validator",
     "type": "library",
     "license": "MIT",
     "authors": [
