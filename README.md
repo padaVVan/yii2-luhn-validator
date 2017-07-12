@@ -14,7 +14,7 @@ php composer.phar require padavvan/yii2-luhn-validator
 ```
 or add
 ```
-"padavvan/yii2-luhn-validator": "~1.0.0"
+"padavvan/yii2-luhn-validator": "~1.0.2"
 ```
 to the require section of your composer.json file.
 
@@ -38,7 +38,10 @@ LuhnValidator::check($digits); // return true or false
 ```
 
 ## Tests
-soon
+```bash
+cd vendor/padavvan/yii2-luhn-validator
+php ../../bin/codecept run
+```
 
 [composer]: https://getcomposer.org/download/
 [luhn]: https://en.wikipedia.org/wiki/Luhn_algorithm
